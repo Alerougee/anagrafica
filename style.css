@@ -1,0 +1,268 @@
+body{
+    background-color: rgb(43, 43, 43);
+    margin: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+.intestazione {
+    margin: 0 auto;
+    padding-top: 20px; 
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: rgb(59, 59, 59);
+    margin: 40px auto;
+    border-radius: 30px;
+    width: min(500px, 90%); 
+    box-shadow: 0px 0px 10px 5px rgb(77, 77, 77);
+}
+
+.intestazione h1 {
+    margin: 0;
+    color: #ffffff; 
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 40px;
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.buttons {
+    margin-top: 10px;
+    background-color: rgb(59, 59, 59);
+    height: 80px;
+    display: flex;           
+    justify-content: center;  
+    align-items: center;
+    gap: 30px;               
+    flex-wrap: wrap;     
+    border-radius: 30px;   
+    width: min(500px, 90%);
+    margin: 0 auto;
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px 5px rgb(104, 104, 104);
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    background-color: rgb(53, 53, 53); 
+    box-shadow: 0px 0px 10px 5px rgb(0, 255, 242);
+    border-radius: 32px;
+    height: 500px;
+    width: 600px;
+}
+
+.left-container h1{
+    color: white;
+    text-shadow: 0px 0px 10px rgb(0, 255, 242);
+    margin-top: 30px;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    background-color: rgb(53, 53, 53); 
+    box-shadow: 0px 0px 10px 5px rgb(245, 208, 0);
+    border-radius: 32px;
+    height: 500px;
+    width: 600px;
+}
+
+.right-container h1{
+    color: white;
+    text-shadow: 0px 0px 10px rgb(245, 208, 0);
+    margin-top: 30px;
+}
+
+.container{
+    display: flex;
+    gap: 100px;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    flex-wrap: wrap; 
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.left-container hr{
+    width: 500px;
+    margin-top: 0px;
+    padding: 0;
+    box-shadow: 0px 0px 10px 3px rgb(0, 255, 242);
+    background-color: rgb(53, 53, 53); 
+    border: none;
+    margin-bottom: 50px;
+}
+
+.right-container hr{
+    width: 500px;
+    margin-top: 0px;
+    padding: 0;
+    box-shadow: 0px 0px 10px 3px rgb(245, 208, 0);
+    background-color: rgb(53, 53, 53); 
+    border: none;
+    margin-bottom: 50px;
+}
+
+.btn-petrozzi{
+    color: white;
+    text-decoration: none;
+    margin-top: 0px;
+    padding: 15px 25px;
+    font-size: 20px;
+    background-color: rgba(0, 255, 242, 0.466);
+    border-radius: 32px;
+    transition: all 0.3s ease; 
+}
+
+.btn-petrozzi:hover{
+    background-color: rgba(0, 121, 115, 0.8);
+    transform: scale(1.2); 
+    box-shadow: 0 0 10px 5px rgb(0, 255, 242);
+}
+
+.petrozzi-container {
+    display: flex;
+    flex-wrap: wrap;        
+    justify-content: center; 
+    gap: 40px;             
+    max-width: 500px;       
+    margin: 0 auto 20px auto;
+}
+
+.btn-curzio{
+    color: white;
+    text-decoration: none;
+    margin-top: 0px;
+    padding: 15px 25px;
+    font-size: 20px;
+    background-color: rgb(245, 208, 0, 0.466);
+    border-radius: 32px;
+    transition: all 0.3s ease; 
+}
+
+.btn-curzio:hover{
+    background-color: rgba(110, 94, 0, 0.8);
+    transform: scale(1.2); 
+    box-shadow: 0 0 10px 5px rgb(245, 208, 0, 0.466);
+}
+
+.curzio-container {
+    display: flex;
+    flex-wrap: wrap;        
+    justify-content: center; 
+    gap: 40px;             
+    max-width: 500px;       
+    margin: 0 auto 20px auto;
+}
+
+
+
+@media (max-width: 768px) {
+
+    body {
+        align-items: center;
+        overflow-x: hidden;
+        
+    }
+
+
+
+    .container {
+        flex-direction: column; 
+        align-items: center;
+        gap: 50px;
+        margin: 5px;
+        margin-top: 50px;
+    }
+
+    .left-container,
+    .right-container {
+        width: 100%; 
+        height: 500px; 
+        display: flex;
+    }
+
+    .left-container h1,
+    .right-container h1 {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .left-container hr,
+    .right-container hr {
+        width: 80%;
+    }
+
+    .petrozzi-container {
+        display: flex;
+        justify-content: center;
+        gap: 30px; 
+        margin-bottom: 20px;
+    }
+
+    .btn-petrozzi {
+        font-size: 18px;
+        padding: 12px 20px;
+    }
+
+    .intestazione,
+    .buttons {
+        width: 90%;
+    }
+
+    .buttons {
+        flex-wrap: wrap;
+        gap: 15px;
+        height: auto;
+        padding: 10px 0;
+        margin-top: 10px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .btn-petrozzi{
+        padding: 10px 15px;
+    }
+
+    .btn-petrozzi:hover{
+        transform: scale(1.1);
+        box-shadow: 0 0 10px 5px rgb(0, 255, 242);
+    }
+
+    .btn-curzio{
+        padding: 10px 15px;
+    }
+
+    .btn-curzio:hover{
+        transform: scale(1.1);
+        box-shadow: 0 0 10px 5px rgb(0, 255, 242);
+    }
+}
