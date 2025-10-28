@@ -85,8 +85,9 @@ body{
    }
 
    .password-container input::placeholder {
-    font-size: 130px; 
+    font-size: 13px; 
 }
 }
+
 
 
